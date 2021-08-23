@@ -36,7 +36,7 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WJG-Zg-3Eu">
-                                            <rect key="frame" x="8" y="289.5" width="359" height="65.5"/>
+                                            <rect key="frame" x="8" y="289.5" width="359" height="57.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-pw-PH8">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
@@ -46,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-MD-vzF">
-                                                    <rect key="frame" x="0.0" y="28.5" width="359" height="37"/>
+                                                    <rect key="frame" x="0.0" y="28.5" width="359" height="29"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="8"/>
                                                     <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
@@ -58,7 +58,7 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="WJG-Zg-3Eu" secondAttribute="bottom" id="Aif-hT-2Vq"/>
+                                    <constraint firstAttribute="bottom" secondItem="WJG-Zg-3Eu" secondAttribute="bottom" constant="8" id="Aif-hT-2Vq"/>
                                     <constraint firstItem="h3t-mf-lUQ" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leading" id="GfJ-nQ-lMv"/>
                                     <constraint firstAttribute="trailing" secondItem="WJG-Zg-3Eu" secondAttribute="trailing" constant="8" id="HOe-z8-xqn"/>
                                     <constraint firstAttribute="trailing" secondItem="h3t-mf-lUQ" secondAttribute="trailing" id="Tim-eF-zLH"/>
