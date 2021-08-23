@@ -7,6 +7,12 @@ import RxSwift
  */
 class CampaignListingView: UICollectionView {
 
+    var flowLayout: UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        return layout
+    }()
+    
     /**
      A strong reference to the view's data source. Needed because the view's dataSource property from UIKit is weak.
      */
@@ -19,6 +25,7 @@ class CampaignListingView: UICollectionView {
         let campaignDataSource = ListingDataSource(campaigns: campaigns)
         dataSource = campaignDataSource
         delegate = campaignDataSource
+        collectionViewLayout = flowLayout
         strongDataSource = campaignDataSource
         reloadData()
     }
@@ -78,12 +85,6 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
         }
         return cell
     }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 450)
-    }
-
 }
 
 
